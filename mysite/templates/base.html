@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>{% block head_title %}{% endblock %}MVP Landing</title>
+
+      {% include 'head_css.html' %}
+
+      {% include 'navbar.html' %}
+  </head>
+  <body>
+
+    <main class="container-fluid">
+        {% block jumbotron %}
+        {% endblock %}
+    </main>>
+
+    <main class="container">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+
+
+  </body>
+</html>
