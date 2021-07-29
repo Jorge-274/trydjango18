@@ -2,9 +2,37 @@
 {% block jumbotron %}
 {% endblock %}
 {% block content %}
-<div class="row">
-  <div class="col-md-8 col-sm-6">.col-md-8</div>
-  <div class="col-md-4 col-sm-6">.col-md-4</div>
+<!--  <div class="row">-->
+<!--    <div class="col-md-8 col-sm-6" style="background-color:red;">.col-md-8</div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-6 col-sm-8" style="background-color:orange;">.col-md-4</div>-->
+<!--          <div class="col-md-6 col-sm-4" style="background-color:yellow;">.col-md-4</div>-->
+<!--        </div>-->
+<!--  </div>-->
+<!--    <div class="col-md-4 col-sm-6" style="background-color:blue;">.col-md-4</div>-->
+<!--      <div class="row">-->
+<!--            <div class="col-md-12" style="background-color:purple;">.col-md-4</div>-->
+<!--      </div>-->
+<!--  </div>-->
+
+<div class="table-responsive">
+  <table class="table">
+    <!-- On rows -->
+<tr class="active">...</tr>
+<tr class="success">...</tr>
+<tr class="warning">...</tr>
+<tr class="danger">...</tr>
+<tr class="info">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="active">...</td>
+  <td class="success">...</td>
+  <td class="warning">...</td>
+  <td class="danger">...</td>
+  <td class="info">...</td>
+</tr>
+  </table>
 </div>
 <!--<div class="row">-->
 <!--  <div class="col-md-4">.col-md-4</div>-->

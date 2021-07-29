@@ -2,20 +2,33 @@
 {% load crispy_forms_tags %}
 <!--{% load crispy_forms_tags %}-->
 {% block head_title %}Bienvenido /{% endblock %}
+<style>
+    {% block style %}
 
+    {% endblock %}
+</style>
 
 {% block jumbotron %}
-<div class="jumbotron">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">View navbar docs &raquo;</a>
-  </div>
+<div class="row">
+    <div class="col-sm-6">
+
+    <div class="jumbotron_content">
+        <h1>Try Django 1.8</h1>
+        <p class="lead text-align-center">The MVP landing project is designed to get your project started. The goal is to help you launch as soon as
+        possible with the least amount of investment using time or money. Join Us today</p>
+        <p>
+        <a class="btn btn-lg btn-primary" href="" role="button">Join Us &raquo;</a>
+        </p>
+      </div>
+        <div class="col-sm-6 " style="background-color:black;height:200px;">
+
+    </div>
 {% endblock %}
 
 
 {% block content %}
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-sm-3">
 
 
             <h1>{{ title }}</h1>>
@@ -28,5 +41,20 @@
             <!--    <input type="text"><input>-->
             </form>
       </div>
-</div>>
+    <div class="col-sm-3">
+        <p class="lead text-align-center">Texto de Ejemplo 1</p>
+
+        </div>
+
+        <div class="col-sm-3 ">
+        <p class="lead text-align-center">Texto de Ejemplo 2</p>
+
+        </div>
+
+        <div class="col-sm-3">
+        <p class="lead text-align-center">Texto de Ejemplo 3</p>
+
+        </div>
+
+    </div>
 {% endblock %}
